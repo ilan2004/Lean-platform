@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+  }
+  
+  .selection-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    background-color: #000000;
+    margin: 0.5rem;
+    color: white;
+  }
+  
+  .selection-box h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+  
+  .checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .checkboxes label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .checkboxes span {
+    margin-left: 0.25rem;
+  }
+  
+  .selection-box p {
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  .button {
+    background-color: #4299e1;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #2b6cb0;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #2d3748;
+    border-top: 2px solid #4a5568;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  footer aside {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer span {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .author-link {
+    color: #63b3ed;
+    margin-left: 0.25rem;
+    text-decoration: none;
+  }
+  

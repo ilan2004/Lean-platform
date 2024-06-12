@@ -1,0 +1,145 @@
+.contact-form-container {
+    background-color: white;
+    width: 95%;
+    max-width: 360px;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.1rem 1rem;
+
+}
+
+.contact-form-header-content {
+    padding-left: 1rem; /* Equivalent to px-4 */
+    padding-right: 1rem; /* Equivalent to px-4 */
+    display: flex;
+    flex-direction: column; /* Equivalent to flex-col */
+    align-items: center; /* Equivalent to items-center */
+    justify-content: center; 
+    width: 288px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: center;
+    /* Remove or comment out height */
+    /* height: 44px; */
+}
+
+.contact-form-header {
+    color: #4D4D4D; /* Equivalent to text-[#4D4D4D] */
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    font-weight: 500; /* Equivalent to font-medium */
+    border-bottom: 2px solid #E0E0E0;/* Equivalent to border-b-2 */
+    padding: 1rem; /* Equivalent to px-4 py-4 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 336px; /* Equivalent to w-full */
+    font-family: 'Poppins', sans-serif;
+}
+
+.get{
+    margin: 0px;
+}
+
+
+.contact-form-body {
+    width: 336px;
+    min-height: 265px; /* Use min-height instead of height */
+    gap: 20px;
+    opacity: 0px;
+}
+
+.contact-form-field {
+    display: flex;
+    flex-direction: column; /* Equivalent to flex-col */
+    align-items: flex-start; /* Equivalent to items-start */
+    justify-content: flex-start; /* Equivalent to justify-start */
+    width: 336px;
+
+}
+
+.contact-form-label {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    font-family: 'Poppins', sans-serif; /* Equivalent to font-poppins */
+    font-weight: 500; /* Equivalent to font-medium */
+    color: #4D4D4D; /* Equivalent to text-[#4D4D4D] */
+    display: flex;
+    align-items: center; /* Equivalent to items-center */
+    gap: 0.25rem; /* Equivalent to gap-1 */
+    margin:0.2em;
+}
+
+.contact-form-input {
+    margin: 0px;;
+    margin-top: 0.25rem; /* Equivalent to mt-1 */
+    width: 336px;
+height: 36px;
+gap: 0px;
+opacity: 0px;
+/* Equivalent to w-full */
+    background-color: #E0E0E0; /* Equivalent to bg-[#E0E0E0] */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    padding: 0.5rem 1rem; /* Equivalent to px-4 py-2 */
+    font-family: 'Poppins', sans-serif; /* Equivalent to font-poppins */
+    font-weight: 500; /* Equivalent to font-medium */
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    border: 1px solid #CCCCCC;
+    height: 36px; /* Equivalent to border-[#CCCCCC] border */
+}
+
+.contact-form-textarea {
+    margin-top: 0.25rem; /* Equivalent to mt-1 */
+    width: 100%; /* Equivalent to w-full */
+    background-color: #E0E0E0; /* Equivalent to bg-[#E0E0E0] */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    padding: 0.75rem 1rem; /* Equivalent to px-4 py-3 */
+    font-family: 'Poppins', sans-serif; /* Equivalent to font-poppins */
+    font-weight: 500; /* Equivalent to font-medium */
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    border: 1px solid #CCCCCC; /* Equivalent to border-[#CCCCCC] border */
+}
+
+.contact-form-textarea-small {
+    height: 100px; /* Equivalent to h-[100px] */
+}
+
+.contact-form-textarea-large {
+    height: 83px;
+    width:336px ; /* Equivalent to h-[130px] */
+}
+
+.contact-form-submit {
+    background-color: #0F0F0F; /* Equivalent to bg-[#0F0F0F] */
+    margin-left: auto;
+    margin-bottom: 0.5rem; /* Equivalent to mb-4 */
+    margin-right: 1rem; /* Equivalent to mx-4 */
+    padding: 0.5rem 1.25rem; /* Equivalent to px-5 py-2 */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    font-family: 'Poppins', sans-serif; /* Equivalent to font-poppins */
+    font-weight: 500; /* Equivalent to font-medium */
+    color: #F8F8F8; /* Equivalent to text-[#F8F8F8] */
+    border: 1px solid transparent; /* Equivalent to border */
+    margin-top: 1rem; /* Equivalent to mt-4 */
+}
+
+.contact-form-submit-disabled {
+    opacity: 60%; /* Equivalent to opacity-[60%] */
+}
+
+.contact-form-error {
+    color: red; /* Equivalent to text-red-500 */
+    font-family: 'Poppins', sans-serif; /* Equivalent to font-poppins */
+}
+
+.contact-astrix {
+    color: red;
+}
+
+.contact-highlight {
+    color: black;
+}

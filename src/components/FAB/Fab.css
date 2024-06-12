@@ -1,0 +1,403 @@
+/* styles.css */
+.fab-container {
+    position: fixed;
+    width: 100%;
+}
+
+.fab-container--desktop {
+    bottom: 32px;
+    right: 32px;
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .fab-container--desktop {
+        display: block;
+    }
+}
+
+.fab-container--mobile {
+    bottom: 24px;
+    right: 24px;
+    display: block;
+    z-index: 20;
+}
+
+@media (min-width: 640px) {
+    .fab-container--mobile {
+        display: none;
+    }
+}
+
+.fab-container--mobile-open {
+    bottom: 0;
+    right: 0;
+}
+
+.fab-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.fab-wrapper--mobile-open {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.option-div-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 20;
+    width: 100%;
+}
+@media (max-width: 768px){
+.desktop-only {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.option-div-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    z-index: 20;
+    width: 100%;
+    justify-content: center;
+    
+}
+}
+
+@media (min-width: 640px) {
+    .desktop-only {
+        display: block;
+    }
+}
+
+.option-div-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background: transparent;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    width: auto;
+}
+
+@media (min-width: 640px) {
+    .option-div-content {
+        position: static;
+        bottom: initial;
+        right: initial;
+    }
+}
+@media (max-width: 768px){
+    .option-div-content {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background: transparent;
+        width: auto;
+    }
+    .option-div-content.flex-col {
+        flex-direction: column;
+        gap: 3px;
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+    }
+    
+    .option-div-content.flex-row {
+        flex-direction: row;
+        gap: 4px;
+        position: relative;
+    }
+    .option-div-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        z-index: 20;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .option-div-content.flex-row {
+        flex-direction: row;
+        gap: 4px;
+        
+    }
+    .options-contents{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0px;;
+
+    }
+ 
+}
+@media (max-width: 768px) {
+    .option-div-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .option-div-content {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background: transparent;
+        width: auto;
+        position: relative;
+    }
+    /* Styles when fab-wrapper--mobile-open class is present */
+    .fab-wrapper--mobile-open .option-div-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.option-div-content.flex-col {
+    flex-direction: column;
+    gap: 3px;
+}
+
+.option-div-content.flex-row {
+    flex-direction: row;
+    gap: 4px;
+}
+
+/* Ensure option-div-content.flex-row comes above .mobile-only in HTML structure */
+@media (max-width: 768px) {
+    .mobile-only {
+        order: 2;
+    }
+
+    .option-div-content.flex-row {
+        order: 1;
+    }
+}
+
+.mobile-only {
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 640px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+.each-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.option-text {
+    margin-right: 8px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 4px 8px;
+    background: white;
+    border-radius: 4px;
+}
+
+@media (min-width: 640px) {
+    .option-text {
+        font-size: 1.125rem;
+        padding: 8px 16px;
+    }
+}
+
+.option-icon {
+    padding: 2px;
+}
+
+.option-icon.selected {
+    box-shadow: 1px 1px 8px 0px #808080;
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+.fab-container-openfab {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+@media (min-width: 640px) {
+    .fab-container-openfab {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.fab-icon {
+    margin-left: 0.5rem;
+}
+
+.fab-toggle {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (min-width: 640px) {
+    .fab-toggle {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.fab-icon {
+    margin-left: 0.5rem;
+}
+
+.close-fab {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (min-width: 640px) {
+    .close-fab {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.flag {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (min-width: 640px) {
+    .flag {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.thumb {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (min-width: 640px) {
+    .thumb {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.suggestion {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (min-width: 640px) {
+    .suggestion {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.contactus {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (min-width: 640px) {
+    .contactus {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.mob-fab-container {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mob-fab-container-sm {
+    width: 56px;
+    height: 56px;
+}
+
+.mob-svg-icon {
+    width: 28px;
+    height: 28px;
+}

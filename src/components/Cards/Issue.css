@@ -1,0 +1,219 @@
+.feedback-card {
+    background-color: white;
+    width: 95%;
+    max-width: 360px;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.1rem 1rem;
+    font-family: Poppins;
+}
+
+.header {
+    color: #4D4D4D; /* Equivalent to text-[#4D4D4D] */
+    font-size: 1.25rem!; /* Equivalent to text-xl */
+    font-weight: 500; /* Equivalent to font-medium */
+    border-bottom: 2px solid #E0E0E0; /* Equivalent to border-b-2 */
+    padding: 1rem!; 
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center; /* Equivalent to items-center */
+    justify-content: center;
+    flex-direction: column; /* Equivalent to flex-col */
+    gap: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: center;
+}
+
+.header p {
+    padding: 0 16px;
+}
+
+.header span {
+    color: black;
+}
+
+.section-selector {
+    width: 100%;
+    font-size: 18px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.section-container p {
+    color: #4D4D4D;
+    margin:5px;
+}
+
+.section-select {
+    background-color: #E0E0E0;
+    margin-top: 4px;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #CCCCCC;
+}
+
+.issue-description {
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.description-header p {
+    color: #4D4D4D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin:0px
+}
+
+.description-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 16px;
+    position: relative;
+}
+
+.textarea {
+    width: 100%;
+    background-color: #E0E0E0;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.textarea.height-large {
+    height: 180px;
+    width:336px ;
+}
+
+.textarea.height-small {
+    height: 100px;
+}
+
+/* .attach-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C7C7C7;
+    padding: 4px 8px;
+    margin-left: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+} */
+
+.attach-label.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.hidden {
+    display: none;
+}
+
+.attached-files {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    right: 16px;
+    bottom: 56px;
+}
+
+.file {
+    position: relative;
+    margin: 4px;
+}
+
+.file-image {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.remove-file-button {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 4px;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.email-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.email-container p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #4D4D4D;
+}
+
+.email-input {
+    background-color: #E0E0E0;
+    border: 1px solid #CCCCCC;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    width: 336px;
+}
+
+.email-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.submit-button {
+    background-color: #0F0F0F;
+    color: #F8F8F8;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin: 16px;
+    align-self: flex-end;
+    cursor: pointer;
+    border: none;
+}
+
+.submit-button.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}

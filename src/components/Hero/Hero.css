@@ -1,0 +1,35 @@
+.hero-container {
+    position: relative;
+}
+
+.back-to-questions {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: start;
+    position: fixed;
+    top: 162px;
+    left: 67px;
+    align-items: center;
+    gap: 8px;
+}
+
+.back-to-questions .back-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.questions-container {
+    position: fixed;
+    top: 250px;
+    left: 304px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.question-box {
+    width: 832px;
+    height: 351px;
+    border-radius: 8px;
+}

@@ -1,0 +1,269 @@
+.suggestion-card {
+    background-color: white;
+    width: 95%;
+    max-width: 430px;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0.1rem 0.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.suggestion-card__header {
+    color: #4D4D4D;
+    padding-left: 1rem; /* Equivalent to px-4 */
+    padding-right: 1rem; /* Equivalent to px-4 */
+    display: flex;
+    flex-direction: column; /* Equivalent to flex-col */
+    align-items: center; /* Equivalent to items-center */
+    justify-content: center; 
+    width: 288px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: center;
+    border-bottom: 2px solid #CCCCCC;
+}
+
+.suggestion-card__header span {
+    color: black;
+}
+
+.suggestion-card__content {
+    display: flex;
+    flex-direction: column;
+    width: 336px;
+
+gap: 12px;
+opacity: 0px;
+
+}
+
+.suggestion-card__section, 
+.suggestion-card__textarea, 
+.suggestion-card__email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 336px;
+height: 64px;
+gap: 12px;
+opacity: 0px;
+
+}
+
+.suggestion-card__section label,
+.suggestion-card__textarea label,
+.suggestion-card__email label {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #4D4D4D;
+}
+
+.suggestion-card__section select,
+.suggestion-card__textarea textarea,
+.suggestion-card__email input {
+    background-color: #E0E0E0;
+    border: 1px solid #CCCCCC;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 16px;
+text-align: left;
+width: 336px;
+padding: 10px 5px;
+gap: 4px;
+border-radius: 4px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+margin: 0px;
+
+    
+
+}
+
+.suggestion-card__textarea .large {
+    height: 200px;
+    
+}
+
+.suggestion-card__textarea .small {
+    height: 160px;
+}
+
+.suggestion-card__attach {
+    background-color: #C7C7C7;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+    color: black;
+}
+
+.suggestion-card__attached-files {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.suggestion-card__file {
+    position: relative;
+}
+
+.suggestion-card__file img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.suggestion-card__file button {
+    position: absolute;
+    top: -0.25rem;
+    right: -0.25rem;
+    background-color: #000000;
+    opacity: 0.6;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.625rem;
+    padding: 0.25rem;
+}
+
+.suggestion-card__error {
+    color: red;
+    font-size: 0.875rem;
+}
+
+.suggestion-card__submit {
+    align-self: flex-end;
+    background-color: #0F0F0F;
+    color: #F8F8F8;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 1rem;
+}
+
+.suggestion-card__submit.disabled {
+    opacity: 0.6;
+}
+.suggestion-card__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+}
+
+.suggestion-card__textarea {
+    width: 336px;
+    background-color: #E0E0E0;
+    border-radius: 0.5rem;
+    padding: 0.75rem 0rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    border: 1px solid #CCCCCC;
+    resize: none;
+    margin-top: 0.25rem;
+}
+
+.suggestion-card__textarea.small {
+    height: 160px; /* Equivalent to h-[160px] */
+}
+
+.suggestion-card__textarea.large {
+    height: 200px; /* Equivalent to h-[200px] */
+}
+
+.suggestion-card__attach-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C7C7C7;
+    padding: 0.25rem 0.625rem; /* Equivalent to px-[10px] py-1 */
+    margin-left: .5rem; /* Equivalent to ml-2 */
+    margin-bottom: 0.5rem;
+    bottom:20px; /* Equivalent to mb-2 */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    color: black;
+    font-size: 1.1875rem; /* Equivalent to text-[19px] */
+}
+
+.suggestion-card__attach-button.disabled {
+    opacity: 0.6; /* Disabled button style */
+}
+
+.suggestion-card__attached-files {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    bottom:20px;
+    right: 1.5rem; /* Equivalent to right-6 */
+}
+
+.suggestion-card__file {
+    position: relative;
+    margin: 0.25rem; /* Equivalent to mx-1 my-1 */
+}
+
+.suggestion-card__file-image {
+    width: 3rem; /* Equivalent to w-12 */
+    height: 3rem; /* Equivalent to h-12 */
+    object-fit: cover;
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+}
+
+.suggestion-card__file-remove {
+    position: absolute;
+    top: -0.3125rem; /* Equivalent to top-[-5px] */
+    right: -0.25rem; /* Equivalent to right-[-4px] */
+    padding: 0.25rem; /* Equivalent to p-1 */
+    background-color: #000000;
+    opacity: 0.6;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.625rem; /* Equivalent to text-[10px] */
+}
+.suggestion-detail__container {
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 16px;
+text-align: left;
+display: flex;
+align-items: start;
+justify-content: start;
+}
+
+.suggestion-detail__label {
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 16px;
+text-align: left;
+    color: #4D4D4D;
+    display: flex;
+height: 16px;
+
+
+}
+
+
